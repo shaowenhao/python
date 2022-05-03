@@ -69,7 +69,7 @@ partTotal = sum(result,2)
 print(partTotal)
 
 #6.2.6 排序
-#sort()排序原列表的元素顺序改变
+#sort()排序原列表的元素顺序改变!!!
 grade = [98,99,97,100]
 print("原列表:",grade)
 grade.sort()

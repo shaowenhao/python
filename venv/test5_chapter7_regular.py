@@ -49,3 +49,17 @@ for item in mathch6:
 
 
 #7.3.2 替换字符串
+# re.sub
+string = '中奖号码为：8369869 联系电话为：13611111111'
+pattern3 = r'1[34578]\d{9}'
+result = re.sub(pattern3,'1XXXXXXXXXX',string)
+print(result)
+
+#使用正则表达式分割字符串
+# re.split() 与字符串分割方法类似 不同的是 分割字符由模式字符串pattern指定
+
+import re
+pattern4 = r'[?|&]'
+url = 'http://baidu.com?username="mr"&pwd="test"'
+result = re.split(pattern4,url)
+print(result)
